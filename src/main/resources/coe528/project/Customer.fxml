@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coe528.project.CustomerController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/2c38988ace6c33703ec72246d0cd2507.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/pngtree-vector-bank-icon-png-image_912135.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="166.0" layoutX="170.0" layoutY="9.0" opacity="0.58" stroke="BLACK" strokeType="INSIDE" width="542.0" />
+      <Text layoutX="182.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome,">
+         <font>
+            <Font name="Garamond" size="50.0" />
+         </font>
+      </Text>
+      <Button layoutX="1091.0" layoutY="58.0" mnemonicParsing="false" onMouseClicked="#logoutCustomer" text="🔒Logout">
+         <font>
+            <Font name="Garamond" size="25.0" />
+         </font>
+      </Button>
+      <Text fx:id="accUsername" layoutX="394.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="346.875">
+         <font>
+            <Font name="Garamond" size="50.0" />
+         </font>
+      </Text>
+      <Text layoutX="185.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Balance: $">
+         <font>
+            <Font name="Garamond" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="185.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Level:">
+         <font>
+            <Font name="Garamond" size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="accBalance" layoutX="283.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5.00">
+         <font>
+            <Font name="Garamond" size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="accLevel" layoutX="340.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Silver">
+         <font>
+            <Font name="Garamond" size="25.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="496.0" layoutX="69.0" layoutY="215.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="703.0" />
+      <Button layoutX="492.0" layoutY="456.0" mnemonicParsing="false" onMouseClicked="#makeTransaction" prefHeight="56.0" prefWidth="269.0" text="Make Purchase">
+         <font>
+            <Font name="Garamond" size="25.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="369.0" layoutX="879.0" layoutY="221.0" opacity="0.68" stroke="BLACK" strokeType="INSIDE" width="365.0" />
+      <Text layoutX="1008.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ATM">
+         <font>
+            <Font name="Garamond" size="50.0" />
+         </font>
+      </Text>
+      <TextField fx:id="atmAmount" layoutX="950.0" layoutY="353.0" prefHeight="25.0" prefWidth="223.0">
+         <font>
+            <Font name="Garamond" size="25.0" />
+         </font>
+      </TextField>
+      <Text layoutX="899.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount" textAlignment="CENTER" wrappingWidth="324.13671875">
+         <font>
+            <Font name="Garamond" size="40.0" />
+         </font>
+      </Text>
+      <Button layoutX="899.0" layoutY="484.0" mnemonicParsing="false" onMouseClicked="#deposit" prefHeight="46.0" prefWidth="134.0" text="Deposit">
+         <font>
+            <Font name="Garamond" size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="1089.0" layoutY="484.0" mnemonicParsing="false" onMouseClicked="#withdraw" prefHeight="46.0" prefWidth="134.0" text="Withdraw">
+         <font>
+            <Font name="Garamond" size="25.0" />
+         </font>
+      </Button>
+      <Text layoutX="929.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$">
+         <font>
+            <Font name="Garamond" size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="errorText" layoutX="892.0" layoutY="574.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Set Text" textAlignment="CENTER" wrappingWidth="338.7898254394531">
+         <font>
+            <Font name="Garamond" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="69.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transaction History" textAlignment="CENTER" wrappingWidth="703.0">
+         <font>
+            <Font name="Garamond" size="40.0" />
+         </font>
+      </Text>
+      <ListView fx:id="transactionView" layoutX="77.0" layoutY="277.0" opacity="0.7" prefHeight="428.0" prefWidth="409.0" />
+   </children>
+</AnchorPane>

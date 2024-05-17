@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="coe528.project.MakeTransactionController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/2c38988ace6c33703ec72246d0cd2507.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="523.0" layoutX="135.0" layoutY="95.0" opacity="0.56" stroke="BLACK" strokeType="INSIDE" width="999.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="150.0" layoutX="92.0" layoutY="67.0" opacity="0.58" stroke="BLACK" strokeType="INSIDE" width="370.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/pngtree-vector-bank-icon-png-image_912135.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="transactionAmount" layoutX="780.0" layoutY="266.0" prefHeight="55.0" prefWidth="289.0" promptText="Enter Amount">
+         <font>
+            <Font name="Garamond" size="30.0" />
+         </font>
+      </TextField>
+      <Text fx:id="amountPrompt" layoutX="860.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount">
+         <font>
+            <Font name="Garamond" size="40.0" />
+         </font>
+      </Text>
+      <Text fx:id="moneySymbol" layoutX="741.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$" textAlignment="CENTER" wrappingWidth="39.0">
+         <font>
+            <Font name="Garamond" size="40.0" />
+         </font>
+      </Text>
+      <Button fx:id="confirmButton" layoutX="570.0" layoutY="508.0" mnemonicParsing="false" onMouseClicked="#completeTransaction" text="Confirm">
+         <font>
+            <Font name="Garamond" size="30.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="transactionOptions" layoutX="182.0" layoutY="269.0" prefHeight="48.0" prefWidth="289.0" promptText="Select an Option" />
+      <Text layoutX="184.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Balance: $">
+         <font>
+            <Font name="Garamond" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="184.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Level:">
+         <font>
+            <Font name="Garamond" size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="accBalance" layoutX="286.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5.00">
+         <font>
+            <Font name="Garamond" size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="accLevel" layoutX="343.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Silver">
+         <font>
+            <Font name="Garamond" size="25.0" />
+         </font>
+      </Text>
+      <Button layoutX="1153.0" layoutY="44.0" mnemonicParsing="false" onMouseClicked="#swtichToCustomer" text="Back">
+         <font>
+            <Font name="Garamond" size="25.0" />
+         </font>
+      </Button>
+      <Text fx:id="transactionMessage" layoutX="453.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transaction Completed!" visible="false">
+         <font>
+            <Font name="Garamond" size="40.0" />
+         </font>
+      </Text>
+      <Text fx:id="errorMessage" layoutX="135.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ERROR: Insufficient Funds!" textAlignment="CENTER" wrappingWidth="999.0">
+         <font>
+            <Font name="Garamond" size="40.0" />
+         </font>
+      </Text>
+      <Text layoutX="184.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Fee: $">
+         <font>
+            <Font name="Garamond" size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="accFee" layoutX="343.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20.00">
+         <font>
+            <Font name="Garamond" size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

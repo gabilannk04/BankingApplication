@@ -1,0 +1,32 @@
+gabilann;1234;customer;4673.010000000009;Silver
+Cell Phone;50.00
+Deposit;20000.00
+Credit Card;50.00
+Entertainment;250.00
+Entertainment;250.00
+Deposit;20.00
+Insurance;200.00
+Travel;500.70
+Deposit;20.00
+Withdrawal;200.00
+Credit Card;200.00
+Deposit;10.00
+Deposit;5.00
+Withdrawal;109.99
+Entertainment;50.00
+Food;200.00
+Insurance;500.00
+Entertainment;600.00
+Insurance;900.00
+Credit Card;20000.00
+Entertainment;200.00
+Deposit;10000.00
+Deposit;1.00
+Withdrawal;10000.00
+Deposit;20000.00
+Investments;20000.00
+Entertainment;50.00
+Food;50.00
+Deposit;200000.00
+Deposit;50.00
+Withdrawal;200000.00

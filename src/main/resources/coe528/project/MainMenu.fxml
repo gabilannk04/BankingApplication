@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coe528.project.MainMenuController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/2c38988ace6c33703ec72246d0cd2507.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="423.0" layoutX="773.0" layoutY="149.0" opacity="0.58" stroke="BLACK" strokeType="INSIDE" width="466.0" />
+      <Text layoutX="844.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" textAlignment="CENTER" wrappingWidth="324.13671875">
+         <font>
+            <Font name="Garamond" size="40.0" />
+         </font>
+      </Text>
+      <Text layoutX="837.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" textAlignment="CENTER" wrappingWidth="338.13671875">
+         <font>
+            <Font name="Garamond" size="40.0" />
+         </font>
+      </Text>
+      <TextField fx:id="usernameIn" layoutX="824.0" layoutY="210.0" prefHeight="45.0" prefWidth="364.0">
+         <font>
+            <Font name="Garamond" size="25.0" />
+         </font>
+      </TextField>
+      <Button layoutX="885.0" layoutY="431.0" mnemonicParsing="false" onMouseClicked="#login" prefHeight="93.0" prefWidth="242.0" text="🔒Login">
+         <font>
+            <Font name="Garamond" size="30.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="136.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GK Capital Trust" wrappingWidth="376.0">
+         <font>
+            <Font name="Garamond" size="55.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="118.0" fitWidth="113.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/pngtree-vector-bank-icon-png-image_912135.jpg" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="passwordIn" layoutX="818.0" layoutY="360.0" prefHeight="53.0" prefWidth="376.0" />
+      <Text fx:id="accNotFoundLabel" layoutX="924.0" layoutY="555.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Not Found!" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="Garamond" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="fillInAllFieldsLabel" layoutX="942.0" layoutY="554.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fill in All Fields!" visible="false">
+         <font>
+            <Font name="Garamond" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="invalidInfo" layoutX="859.0" layoutY="554.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invalid Username/Password Entered!" visible="false">
+         <font>
+            <Font name="Garamond" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
